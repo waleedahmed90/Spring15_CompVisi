@@ -1,0 +1,8 @@
+I = im2double(rgb2gray(imread('funnyanimal.jpg')));
+M = 1/9 * [1 1 1;1 1 1;1 1 1];
+
+newI = conv2(I,M);
+
+imshow(newI);
+
+
